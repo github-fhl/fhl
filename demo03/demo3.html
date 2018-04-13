@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="../build/react.js"></script>
+    <script src="../build/react-dom.js"></script>
+    <script src="../build/browser.min.js"></script>
+</head>
+<body>
+<div id="example1"></div>
+<script type="text/babel">
+    /*
+    数组的定义与输出
+     */
+    var arr=[
+        <h1 key="0"> date0数据1</h1>,
+        <h2 key="1">date1数据2</h2>,
+        <h2 key="8">date2数据8</h2>
+    ];
+    ReactDOM.render(
+        <div>{arr}</div>,
+        document.getElementById('example1')
+    )
+
+</script>
+</body>

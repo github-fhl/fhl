@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <script src="../build/react.js"></script>
+    <script src="../build/react-dom.js"></script>
+    <script src="../build/browser.min.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body>
+<div id="example"></div>
+<script type="text/babel">
+    var names=['one','two','three'];
+    ReactDOM.render(
+        <div>
+            {
+                /**
+                 * 循环输出
+                 */
+                names.map(function (date,xb) {
+                    return <div key={xb}><h1>下标为：</h1>{xb},<h1>数据为：</h1>{date}!hello</div>
+
+                })
+            }
+        </div>,
+        document.getElementById('example')
+    )
+</script>
+
+循环输出循环输出
+</body>
+</html>
+

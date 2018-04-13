@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="../build/react.js"></script>
+    <script src="../build/react-dom.js"></script>
+    <script src="../build/browser.min.js"></script>
+</head>
+<body>
+<div id="example">
+
+</div>
+<script type="text/babel">
+    /*
+    类名大写
+     */
+var Eellyessage=React.createClass({
+    render:function () {
+        /**
+         * 获取多个属性的方式待解决
+         */
+        //return <h2>hello {this.props.age}</h2>
+        return <h2>hello {this.props.age} {this.props.name}</h2>
+
+    }
+});
+ReactDOM.render(
+   <Eellyessage name="fhl" age="24"/>,
+  //<Eellyessage age="24"/>,
+    //<Eellyessage sex="男"/>,
+    document.getElementById('example')
+)
+</script>
+</body>
